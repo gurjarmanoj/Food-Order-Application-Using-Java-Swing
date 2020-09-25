@@ -5,7 +5,14 @@ public class FoodOrder extends JFrame implements ActionListener{
 	JCheckBox cb1, cb2, cb3;
 	JButton b;
 	public FoodOrder(){
-	
+		JMenu menu;
+		JMenuItem j1, j2;
+		JMenuBar md = new JMenuBar();
+		menu = new JMenu("Items");
+		j1 = new JMenuItem("Pizza");
+		j2 = new JMenuItem("Burger");
+
+		menu.add(j1); menu.add(j2);
 		JLabel l = new JLabel("Food Ordering System");
 		l.setBounds(50,50,300,20);
 		cb1 = new JCheckBox("Pizza @ 100");
@@ -21,6 +28,8 @@ public class FoodOrder extends JFrame implements ActionListener{
 		b.setBounds(100, 250, 150, 20);
 
 		b.addActionListener(this);
+		md.add(menu);
+		setJMenuBar(md);
 
 		add(l); add(cb1); add(cb2); add(cb3); add(b);
 		setSize(800, 800);
