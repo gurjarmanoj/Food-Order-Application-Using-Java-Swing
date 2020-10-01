@@ -11,6 +11,10 @@ public class FoodOrder extends JFrame implements ActionListener{
 		menu = new JMenu("Items");
 		j1 = new JMenuItem("Pizza");
 		j2 = new JMenuItem("Burger");
+		j3 = new JMenuItem("Rendang");
+		j4 = new JMenuItem("Sate");
+		j5 = new JMenuItem("Soto");
+		j6 = new JMenuItem("Odading");
 
 		menu.add(j1); menu.add(j2);
 		JLabel l = new JLabel("Food Ordering System");
