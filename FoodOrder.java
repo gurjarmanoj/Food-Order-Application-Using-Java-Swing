@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class FoodOrder extends JFrame implements ActionListener{
-	JCheckBox cb1, cb2, cb3;
+	JCheckBox cb1, cb2, cb3, cb4;
 	JButton b;
 	public FoodOrder(){
 		JMenu menu;
@@ -23,6 +23,9 @@ public class FoodOrder extends JFrame implements ActionListener{
 
 		cb3 = new JCheckBox("Pasta @ 50");
 		cb3.setBounds(100, 200, 150, 20);
+		
+		cb4 = new JCheckBox("Bread @ 5");
+		cb4.setBounds(100, 250, 150, 20);
 
 		b = new JButton("Order Now");
 		b.setBounds(100, 250, 150, 20);
@@ -50,6 +53,10 @@ public class FoodOrder extends JFrame implements ActionListener{
 		if(cb3.isSelected()){
 			amount = amount + 50;
 			msg += "Pasta: 50 Rs \n";
+		}
+		if(cb4.isSelected()){
+			amount = amount + 20;
+			msg += "Bread: 20 Rs \n";
 		}
 
 		msg += "--------------\n";
