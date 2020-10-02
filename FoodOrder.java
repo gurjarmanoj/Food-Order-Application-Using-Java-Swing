@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class FoodOrder extends JFrame implements ActionListener{
-	JCheckBox cb1, cb2, cb3, cb4;
+	JCheckBox cb1, cb2, cb3, cb4,cb5,cb6,cb7,cb8,cb9,cb10,cb11,cb12,cb13,cb14,cb15;
 	JButton b;
 	public FoodOrder(){
 		JMenu menu;
@@ -24,8 +24,41 @@ public class FoodOrder extends JFrame implements ActionListener{
 		cb3 = new JCheckBox("Pasta @ 50");
 		cb3.setBounds(100, 200, 150, 20);
 		
-		cb4 = new JCheckBox("Bread @ 5");
+		cb4 = new JCheckBox("Bread @ 20");
 		cb4.setBounds(100, 250, 150, 20);
+
+		cb5 = new JCheckBox("Garlic Bread @ 30");
+		cb5.setBounds(100, 250, 150, 20);
+
+		cb6 = new JCheckBox("French fries @ 20");
+		cb6.setBounds(100, 250, 150, 20);
+
+		cb7 = new JCheckBox("Onion Rings @ 20");
+		cb7.setBounds(100, 250, 150, 20);
+
+		cb8 = new JCheckBox("Ceaser Salad @ 40");
+		cb8.setBounds(100, 250, 150, 20);
+
+		cb9 = new JCheckBox("Tacos @ 60");
+		cb9.setBounds(100, 250, 150, 20);
+
+		cb10= new JCheckBox("Macaroni and cheese @ 50");
+		cb10.setBounds(100, 250, 150, 20);
+
+		cb11= new JCheckBox("Sandwich @ 35");
+		cb11.setBounds(100, 250, 150, 20);
+
+		cb12= new JCheckBox("Cold coffee @ 30");
+		cb12.setBounds(100, 250, 150, 20);
+
+		cb13= new JCheckBox("Coke @ 20");
+		cb13.setBounds(100, 250, 150, 20);
+
+		cb14= new JCheckBox("Diet Coke @ 25");
+		cb14.setBounds(100, 250, 150, 20);
+
+		cb15= new JCheckBox("Fruit  soda @ 15");
+		cb15.setBounds(100, 250, 150, 20);
 
 		b = new JButton("Order Now");
 		b.setBounds(100, 250, 150, 20);
@@ -57,6 +90,50 @@ public class FoodOrder extends JFrame implements ActionListener{
 		if(cb4.isSelected()){
 			amount = amount + 20;
 			msg += "Bread: 20 Rs \n";
+		}
+		if(cb5.isSelected()){
+			amount = amount + 30;
+			msg += "Garlic Bread: 30 Rs \n";
+		}
+		if(cb6.isSelected()){
+			amount = amount + 20;
+			msg += "French Fries: 20 Rs \n";
+		}
+		if(cb7.isSelected()){
+			amount = amount + 20;
+			msg += "Onion Rings: 20 Rs \n";
+		}
+		if(cb8.isSelected()){
+			amount = amount + 40;
+			msg += "Ceaser Salad: 40 Rs \n";
+		}
+		if(cb9.isSelected()){
+			amount = amount + 60;
+			msg += "Tacos: 60 Rs \n";
+		}
+		if(cb10.isSelected()){
+			amount = amount + 50;
+			msg += "Macaroni and cheese: 50 Rs \n";
+		}
+		if(cb11.isSelected()){
+			amount = amount + 35;
+			msg += "Sandwich: 35 Rs \n";
+		}
+		if(cb12.isSelected()){
+			amount = amount + 30;
+			msg += "Cold coffee: 30 Rs \n";
+		}
+		if(cb13.isSelected()){
+			amount = amount + 20;
+			msg += "Coke: 20 Rs \n";
+		}
+		if(cb14.isSelected()){
+			amount = amount + 25;
+			msg += "Diet coke: 25 Rs \n";
+		}
+		if(cb15.isSelected()){
+			amount = amount + ;
+			msg += "Fruit soda: 15 Rs \n";
 		}
 
 		msg += "--------------\n";
