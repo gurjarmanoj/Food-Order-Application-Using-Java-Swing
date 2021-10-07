@@ -1,9 +1,18 @@
-import javax.swing.*;
-import java.awt.event.*;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import javax.swing.JMenuBar;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class FoodOrder extends JFrame implements ActionListener{
-	JCheckBox cb1, cb2, cb3, cb4,cb5,cb6,cb7,cb8,cb9,cb10,cb11,cb12,cb13,cb14,cb15,cb16,cb17,cb18,cb19,cb20,cb21,cb22,cb23,cb24,cb25,cb26,cb27,cb28,cb29,cb30,cb31,cb32,cb33,cb34,cb35;
-	JButton b;
+	private JCheckBox cb1, cb2, cb3, cb4,cb5,cb6,cb7,cb8,cb9,cb10,cb11,cb12,cb13,cb14,cb15,cb16,cb17,cb18,cb19,cb20,cb21,cb22,cb23,cb24,cb25,cb26,cb27,cb28,cb29,cb30,cb31,cb32,cb33,cb34,cb35;
+	private JButton b;
+
 	public FoodOrder(){
 		JMenu menu;
 		JMenuItem j1, j2;
@@ -129,9 +138,12 @@ public class FoodOrder extends JFrame implements ActionListener{
 
 		add(l); add(cb1); add(cb2); add(cb3); add(b);
 		setSize(800, 800);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLayout(null);
 		setVisible(true);
 	}
+
 	public void actionPerformed(ActionEvent e){
 		float amount = 0;
 		String msg = "";
@@ -276,7 +288,7 @@ public class FoodOrder extends JFrame implements ActionListener{
 		}
 
 		msg += "--------------\n";
-		JOptionPane.showMessageDialog(this,msg+"Total: "+amount);
+		JOptionPane.showMessageDialog(this,msg+"Total: "+amount, "Total", JOptionPane.INFORMATION_MESSAGE);
 	}
 	public static void main(String[] args) {
 		new FoodOrder();
