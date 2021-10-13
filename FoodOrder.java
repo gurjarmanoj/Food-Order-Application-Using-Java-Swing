@@ -26,12 +26,12 @@ public class FoodOrder extends JFrame implements ActionListener{
 		
 		cb4 = new JCheckBox("Bread @ 20");
 		cb4.setBounds(100, 250, 150, 20);
-
-		cb5 = new JCheckBox("Garlic Bread @ 30");
-		cb5.setBounds(100, 250, 150, 20);
-
-		cb6 = new JCheckBox("French fries @ 20");
-		cb6.setBounds(100, 250, 150, 20);
+		
+		cb5 = new JCheckBox("Panner Tika @ 100);
+		cb5.setBounds(100, 300, 150, 20);
+				    
+		cb6 = new JCheckBox("Chur Chur Naan @ 200);
+		cb6.setBounds(100, 350, 150, 20);	    
 
 		cb7 = new JCheckBox("Onion Rings @ 20");
 		cb7.setBounds(100, 250, 150, 20);
@@ -152,8 +152,12 @@ public class FoodOrder extends JFrame implements ActionListener{
 			msg += "Bread: 20 Rs \n";
 		}
 		if(cb5.isSelected()){
-			amount = amount + 30;
-			msg += "Garlic Bread: 30 Rs \n";
+			amount = amount + 100;
+			msg += "Paneer Teeka: 100 Rs \n";
+		}
+		if(cb6.isSelected()){
+			amount = amount + 200;
+			msg += "Chur Chur Naan: 200 Rs \n";
 		}
 		if(cb6.isSelected()){
 			amount = amount + 20;
